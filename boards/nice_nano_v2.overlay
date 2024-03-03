@@ -72,9 +72,3 @@
         };
     };
 };
-
-/ {
-    chosen {
-        zmk,backlight = &backlight;
-    };
-};
