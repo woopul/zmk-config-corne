@@ -58,11 +58,7 @@
     };
 };
 
-/ {
-    chosen {
-        zmk,underglow = &led_strip;
-    };
-};
+
 
 / {
     backlight: pwmleds {
@@ -70,5 +66,12 @@
         pwm_led_0 {
             pwms = <&pwm0 0 PWM_MSEC(10) PWM_POLARITY_NORMAL>;
         };
+    };
+};
+
+/ {
+    chosen {
+        zmk,backlight = &backlight;
+        zmk,underglow = &led_strip;
     };
 };
