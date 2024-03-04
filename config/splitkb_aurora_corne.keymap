@@ -68,10 +68,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4       &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO    &kp BSPC
-&bt BT_CLR  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG    &kp LEFT    &kp DOWN     &kp UP      &kp RIGHT  &kp CAPSLOCK  &trans
-&kp LSHFT   &trans           &trans           &trans           &trans           &trans             &trans      &trans       &trans      &trans     &trans        &trans
-                                              &lt 3 ESCAPE     &kp LGUI         &lt 4 TAB          &kp RET     &trans       &kp BSPC
+&kp TAB     &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4       &kp K_COPY  &kp K_UNDO     &kp K_CUT  &kp K_REDO  &kp LG(K_PASTE)  &kp BSPC
+&bt BT_CLR  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG    &kp LEFT    &kp DOWN       &kp UP     &kp RIGHT   &kp CAPSLOCK     &trans
+&kp LSHFT   &trans           &trans           &trans           &trans           &trans             &kp HOME    &kp PAGE_DOWN  &kp PG_UP  &kp END     &kp INS          &trans
+                                              &lt 3 ESCAPE     &kp LGUI         &lt 4 TAB          &kp RET     &trans         &kp BSPC
             >;
         };
 
@@ -86,20 +86,11 @@
 
         symbols_layer {
             bindings = <
-&trans  &trans  &trans  &trans        &trans    &trans    &kp PLUS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL        &trans         &trans
-&trans  &trans  &trans  &trans        &trans    &trans    &kp MINUS  &kp LBRC              &kp RBRC               &kp KP_MULTIPLY  &trans         &trans
-&trans  &trans  &trans  &trans        &trans    &trans    &kp UNDER  &kp LBKT              &kp RBKT               &kp KP_DIVIDE    &kp LESS_THAN  &kp GREATER_THAN
-                        &lt 3 ESCAPE  &kp LGUI  &trans    &kp N0     &lt 2 SPACE           &kp BSPC
+&trans          &trans  &trans  &trans        &trans          &trans    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp UNDER        &trans         &trans
+&trans          &trans  &trans  &trans        &kp LEFT_SHIFT  &trans    &kp LBRC              &kp RBRC               &kp PLUS   &kp KP_MULTIPLY  &trans         &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans        &trans          &trans    &kp LBKT              &kp RBKT               &kp EQUAL  &kp KP_DIVIDE    &kp LESS_THAN  &kp GREATER_THAN
+                                &lt 3 ESCAPE  &trans          &trans    &kp N0                &kp BACKSPACE          &trans
             >;
-        };
-    };
-
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        navigation_condition {
-            if-layers = <3 4>;
-            then-layer = <2>;
         };
     };
 };
