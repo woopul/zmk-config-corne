@@ -15,6 +15,8 @@
 #define NUMPAD  3
 #define SYMBOLS 4
 
+&led_strip { chain-length = <27>; };
+
 / {
     behaviors {
         hm: homerow_mods {
@@ -63,14 +65,14 @@
 
         lower_layer {
             // -----------------------------------------------------------------------------------------
-                    // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  7  |  7  |  8  |  9  |  0  | BKSP |
+            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  7  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |  4  |  5  |  6  | RGT |     |      |
             // | SHFT |     |     |     |     |     |   |  1  |  2  |  3  |     |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4       &kp K_COPY  &kp K_UNDO     &kp K_CUT  &kp K_REDO  &kp LG(K_PASTE)  &kp BSPC
-&bt BT_CLR  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG    &kp LEFT    &kp DOWN       &kp UP     &kp RIGHT   &kp CAPSLOCK     &trans
+&bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4       &kp K_COPY  &kp K_UNDO     &kp K_CUT  &kp K_REDO  &kp LG(K_PASTE)  &kp BSPC
+&trans      &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG    &kp LEFT    &kp DOWN       &kp UP     &kp RIGHT   &kp CAPSLOCK     &trans
 &kp LSHFT   &trans           &trans           &trans           &trans           &trans             &kp HOME    &kp PAGE_DOWN  &kp PG_UP  &kp END     &kp INS          &trans
                                               &lt 3 ESCAPE     &kp LGUI         &lt 4 TAB          &kp RET     &trans         &kp BSPC
             >;
@@ -78,10 +80,10 @@
 
         numpad_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans       &kp N7  &kp N8       &kp N9    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans       &kp N4  &kp N5       &kp N6    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans       &kp N1  &kp N2       &kp N3    &trans  &trans  &trans
-                        &trans  &kp LGUI  &lt 4 TAB    &kp N0  &lt 2 SPACE  &kp BSPC
+&trans  &trans  &trans  &trans  &trans  &trans       &kp N7     &kp N8         &kp N9  &kp MINUS  &kp EQUAL        &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &kp N4     &kp N5         &kp N6  &kp PLUS   &kp KP_ASTERISK  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &kp N1     &kp N2         &kp N3  &kp N0     &kp KP_DIVIDE    &trans
+                        &trans  &trans  &lt 4 TAB    &kp SPACE  &kp BACKSPACE  &trans
             >;
         };
 
