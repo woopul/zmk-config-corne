@@ -15,7 +15,10 @@
 #define NUMPAD  3
 #define SYMBOLS 4
 
-&led_strip { chain-length = <27>; };
+&led_strip { 
+    chain-length = <27>;
+};
+
 
 / {
     behaviors {
@@ -78,13 +81,11 @@
             >;
         };
 
-        ja
-
         numpad_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans       &kp KP_ASTERISK  &kp N7  &kp N8         &kp N9  &kp MINUS  &trans
 &trans  &trans  &trans  &trans  &trans  &trans       &kp EQUAL        &kp N4  &kp N5         &kp N6  &kp PLUS   &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &kp KP_DIVIDE    &kp N1  &kp N2         &kp N3  &kp N0     &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &kp KP_DIVIDE    &kp N1  &kp N2         &kp N3  &trans     &trans
                         &trans  &trans  &lt 4 TAB    &kp SPACE        &kp N0  &kp BACKSPACE
             >;
         };
