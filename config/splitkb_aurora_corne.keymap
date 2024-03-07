@@ -75,10 +75,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans         &kp LG(NUMBER_1)  &kp LG(N2)          &kp LG(N3)       &kp LG(N4)        &kp LG(LS(GRAVE))    &kp C_MUTE  &kp C_VOL_DN   &kp C_VOL_UP  &trans     &trans        &kp LS(LG(N4))
-&kp BACKSPACE  &mt LGUI LG(A)    &mt LEFT_ALT LG(S)  &mt LCTRL LG(C)  &mt LSHIFT LG(V)  &kp LG(GRAVE)        &kp LEFT    &kp DOWN       &kp UP        &kp RIGHT  &kp CAPSLOCK  &kp LC(LS(LG(N4)))
-&trans         &trans            &trans              &kp LG(X)        &kp LG(Z)         &kp LG(LS(Z))        &kp HOME    &kp PAGE_DOWN  &kp PG_UP     &kp END    &kp INS       &trans
-                                                     &trans           &trans            &trans               &trans      &kp BACKSPACE  &trans
+&trans                 &kp LG(NUMBER_1)  &kp LG(N2)          &kp LG(N3)       &kp LG(N4)        &kp LG(LS(GRAVE))    &kp C_MUTE  &kp C_VOL_DN   &kp C_VOL_UP  &kp LC(LA(LG(COMMA)))  &trans        &kp LS(LG(N4))
+&kp BACKSPACE          &mt LGUI LG(A)    &mt LEFT_ALT LG(S)  &mt LCTRL LG(C)  &mt LSHIFT LG(V)  &kp LG(GRAVE)        &kp LEFT    &kp DOWN       &kp UP        &kp RIGHT              &kp CAPSLOCK  &kp LC(LS(LG(N4)))
+&kp LC(LG(LA(GRAVE)))  &trans            &trans              &kp LG(X)        &kp LG(Z)         &kp LG(LS(Z))        &kp HOME    &kp PAGE_DOWN  &kp PG_UP     &kp END                &kp INS       &trans
+                                                             &trans           &trans            &trans               &trans      &kp BACKSPACE  &trans
             >;
         };
 
