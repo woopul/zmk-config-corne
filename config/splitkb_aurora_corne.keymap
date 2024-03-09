@@ -42,10 +42,9 @@
             //                    | GUI | LWR | SPC |   | ENT | BKSP  | RSE |
 
             bindings = <
-&trans      &kp Q       &lt 1 W         &lt 2 E      &kp R             &kp T      &kp Y        &kp U              &kp I         &kp O            &kp P          &kp TILDE
-&kp LSHIFT  &hm LGUI A  &hm LEFT_ALT S  &hm LCTRL D  &hm LEFT_SHIFT F  &kp G      &kp H        &hm RIGHT_SHIFT J  &hm RCTRL K   &hm RIGHT_ALT L  &hm RGUI SEMI  &kp SQT
-&kp LALT    &kp Z       &kp X           &kp C        &kp V             &kp B      &kp N        &kp M              &kp COMMA     &kp DOT          &kp FSLH       &kp BACKSLASH
-                                        &kp ESC      &lt 3 SPACE       &kp TAB    &lt 4 ENTER  &kp BSPC           &lt 5 DELETE
+&kp LSHIFT  &hm LGUI A  &hm LEFT_ALT S  &hm LCTRL D                   &hm LEFT_SHIFT F  &kp G      &kp H        &hm RIGHT_SHIFT J  &hm RCTRL K   &hm RIGHT_ALT L  &hm RGUI SEMI  &kp SQT
+&kp LALT    &kp Z       &kp X           &kp C                         &kp V             &kp B      &kp N        &kp M              &kp COMMA     &kp DOT          &kp FSLH       &kp BACKSLASH
+                                        &mt LG(LA(LC(LSHFT))) ESCAPE  &lt 3 SPACE       &kp TAB    &lt 4 ENTER  &kp BSPC           &lt 5 DELETE
             >;
         };
 
