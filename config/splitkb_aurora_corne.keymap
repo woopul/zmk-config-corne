@@ -42,19 +42,19 @@
             //                    | GUI | LWR | SPC |   | ENT | BKSP  | RSE |
 
             bindings = <
-&trans      &kp Q       &lt 1 W         &lt 2 E                       &kp R             &kp T      &kp Y        &kp U              &kp I         &kp O            &kp P          &kp TILDE
-&kp LSHIFT  &hm LGUI A  &hm LEFT_ALT S  &hm LCTRL D                   &hm LEFT_SHIFT F  &kp G      &kp H        &hm RIGHT_SHIFT J  &hm RCTRL K   &hm RIGHT_ALT L  &hm RGUI SEMI  &kp SQT
-&kp LALT    &kp Z       &kp X           &kp C                         &kp V             &kp B      &kp N        &kp M              &kp COMMA     &kp DOT          &kp FSLH       &kp BACKSLASH
-                                        &mt LG(LA(LC(LSHFT))) ESCAPE  &lt 3 SPACE       &kp TAB    &lt 4 ENTER  &kp BSPC           &lt 5 DELETE
+&trans      &kp Q       &lt 1 W         &lt 2 E               &kp R             &kp T      &kp Y        &kp U              &kp I         &kp O            &kp P          &kp TILDE
+&kp LSHIFT  &hm LGUI A  &hm LEFT_ALT S  &hm LCTRL D           &hm LEFT_SHIFT F  &kp G      &kp H        &hm RIGHT_SHIFT J  &hm RCTRL K   &hm RIGHT_ALT L  &hm RGUI SEMI  &kp SQT
+&kp LALT    &kp Z       &kp X           &kp C                 &kp V             &kp B      &kp N        &kp M              &kp COMMA     &kp DOT          &kp FSLH       &kp BACKSLASH
+                                        &mt LA(LSHFT) ESCAPE  &lt 3 SPACE       &kp TAB    &lt 4 ENTER  &kp BSPC           &lt 5 DELETE
             >;
         };
 
         numpad_layer {
             bindings = <
-&trans          &trans  &trans  &trans  &trans  &trans       &kp N7  &kp N8  &kp N9  &kp MINUS  &kp EQUAL  &trans
-&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans       &kp N4  &kp N5  &kp N6  &kp PLUS   &trans     &trans
-&trans          &trans  &trans  &trans  &trans  &trans       &kp N1  &kp N2  &kp N3  &kp STAR   &kp SLASH  &trans
-                                &trans  &trans  &lt 2 TAB    &trans  &trans  &kp N0
+&trans  &trans  &trans  &trans  &trans  &trans       &kp N7  &kp N8  &kp N9  &kp MINUS  &kp EQUAL  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &kp N4  &kp N5  &kp N6  &kp PLUS   &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &kp N1  &kp N2  &kp N3  &kp STAR   &kp SLASH  &trans
+                        &trans  &trans  &lt 2 TAB    &trans  &trans  &kp N0
             >;
         };
 
@@ -75,9 +75,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LC(LG(LA(GRAVE)))  &kp LG(NUMBER_1)    &kp LG(N2)          &kp LG(N3)       &kp LG(N4)        &kp LG(LS(GRAVE))    &kp C_MUTE  &kp C_VOL_DN   &kp C_VOL_UP  &trans     &trans        &trans
-&kp BACKSPACE          &mt LGUI LG(A)      &mt LEFT_ALT LG(S)  &mt LCTRL LG(C)  &mt LSHIFT LG(V)  &kp LG(GRAVE)        &kp LEFT    &kp DOWN       &kp UP        &kp RIGHT  &kp CAPSLOCK  &trans
-&kp LC(LG(LA(COMMA)))  &kp LG(LS(LC(N4)))  &kp LG(LS(N4))      &kp LG(X)        &kp LG(Z)         &kp LG(LS(Z))        &kp HOME    &kp PAGE_DOWN  &kp PG_UP     &kp END    &kp INS       &trans
+&kp LC(LG(LA(GRAVE)))  &kp LG(NUMBER_1)    &kp LG(N2)          &kp LG(N3)       &kp LG(N4)        &kp LG(LS(GRAVE))    &kp C_MUTE  &kp C_VOL_DN   &kp C_VOL_UP  &kp CAPS   &trans  &trans
+&kp BACKSPACE          &mt LGUI LG(A)      &mt LEFT_ALT LG(S)  &mt LCTRL LG(C)  &mt LSHIFT LG(V)  &kp LG(GRAVE)        &kp LEFT    &kp DOWN       &kp UP        &kp RIGHT  &trans  &trans
+&kp LC(LG(LA(COMMA)))  &kp LG(LS(LC(N4)))  &kp LG(LS(N4))      &kp LG(X)        &kp LG(Z)         &kp LG(LS(Z))        &kp HOME    &kp PAGE_DOWN  &kp PG_UP     &kp END    &trans  &trans
                                                                &trans           &trans            &trans               &trans      &kp BACKSPACE  &trans
             >;
         };
