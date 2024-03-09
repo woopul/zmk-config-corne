@@ -51,19 +51,19 @@
 
         numpad_layer {
             bindings = <
-&trans         &trans  &trans  &trans  &trans  &trans       &kp N7  &kp N8  &kp N9  &kp MINUS  &kp EQUAL  &trans
-&kp BACKSPACE  &trans  &trans  &trans  &trans  &trans       &kp N4  &kp N5  &kp N6  &kp PLUS   &trans     &trans
-&trans         &trans  &trans  &trans  &trans  &trans       &kp N1  &kp N2  &kp N3  &kp STAR   &kp SLASH  &trans
-                               &trans  &trans  &lt 2 TAB    &trans  &trans  &kp N0
+&trans          &trans  &trans  &trans  &trans  &trans       &kp N7  &kp N8  &kp N9  &kp MINUS  &kp EQUAL  &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans       &kp N4  &kp N5  &kp N6  &kp PLUS   &trans     &trans
+&trans          &trans  &trans  &trans  &trans  &trans       &kp N1  &kp N2  &kp N3  &kp STAR   &kp SLASH  &trans
+                                &trans  &trans  &lt 2 TAB    &trans  &trans  &kp N0
             >;
         };
 
         symbols_layer {
             bindings = <
-&trans         &trans  &trans  &trans  &kp EXCLAMATION  &kp CARET     &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp EQUAL  &trans
-&kp BACKSPACE  &trans  &trans  &trans  &kp QMARK        &kp DOLLAR    &kp LESS_THAN     &kp LBRC              &kp RBRC               &kp PLUS   &kp COLON  &kp PIPE
-&trans         &trans  &trans  &trans  &trans           &trans        &kp GRAVE         &kp LBKT              &kp RBKT               &trans     &trans     &trans
-                               &trans  &trans           &trans        &trans            &trans                &trans
+&trans          &trans  &trans  &trans  &kp EXCLAMATION  &kp CARET     &kp UNDER         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp EQUAL  &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans  &kp QMARK        &kp GRAVE     &kp GREATER_THAN  &kp LBRC              &kp RBRC               &kp PLUS   &kp COLON  &kp PIPE
+&trans          &trans  &trans  &trans  &trans           &kp DOLLAR    &kp LESS_THAN     &kp LBKT              &kp RBKT               &trans     &trans     &trans
+                                &trans  &trans           &trans        &trans            &trans                &trans
             >;
         };
 
