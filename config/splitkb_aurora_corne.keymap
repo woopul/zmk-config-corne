@@ -60,9 +60,9 @@
 
         symbols_layer {
             bindings = <
-&trans          &trans  &trans  &trans  &kp EXCLAMATION  &kp CARET     &kp UNDER         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp EQUAL  &trans
+&trans          &trans  &trans  &trans  &kp EXCLAMATION  &kp DOLLAR    &kp UNDER         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp EQUAL  &trans
 &kp LEFT_SHIFT  &trans  &trans  &trans  &kp QMARK        &kp GRAVE     &kp GREATER_THAN  &kp LBRC              &kp RBRC               &kp PLUS   &kp COLON  &kp PIPE
-&trans          &trans  &trans  &trans  &trans           &kp DOLLAR    &kp LESS_THAN     &kp LBKT              &kp RBKT               &trans     &trans     &trans
+&trans          &trans  &trans  &trans  &kp CARET        &trans        &kp LESS_THAN     &kp LBKT              &kp RBKT               &trans     &trans     &trans
                                 &trans  &trans           &trans        &trans            &trans                &trans
             >;
         };
