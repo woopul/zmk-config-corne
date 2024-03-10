@@ -75,7 +75,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LC(LG(LA(GRAVE)))  &kp LG(NUMBER_1)    &kp LG(N2)          &kp LG(N3)       &kp LG(N4)        &kp LG(LS(GRAVE))    &kp C_MUTE  &kp C_VOL_DN   &kp C_VOL_UP  &kp CAPS   &trans  &trans
+&kp LC(LG(LA(GRAVE)))  &kp LC(LS(Q))       &kp LC(LS(W))       &kp LC(LS(E))    &kp LC(LS(R))     &kp LG(LS(GRAVE))    &kp C_MUTE  &kp C_VOL_DN   &kp C_VOL_UP  &kp CAPS   &trans  &trans
 &kp BACKSPACE          &mt LGUI LG(A)      &mt LEFT_ALT LG(S)  &mt LCTRL LG(C)  &mt LSHIFT LG(V)  &kp LG(GRAVE)        &kp LEFT    &kp DOWN       &kp UP        &kp RIGHT  &trans  &trans
 &kp LC(LG(LA(COMMA)))  &kp LG(LS(LC(N4)))  &kp LG(LS(N4))      &kp LG(X)        &kp LG(Z)         &kp LG(LS(Z))        &kp HOME    &kp PAGE_DOWN  &kp PG_UP     &kp END    &trans  &trans
                                                                &trans           &trans            &trans               &trans      &kp BACKSPACE  &trans
