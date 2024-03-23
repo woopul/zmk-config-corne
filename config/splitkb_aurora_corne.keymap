@@ -15,6 +15,7 @@
 #define NAVIGATION 3
 #define MAIN_SYMBOLS 4
 #define HARDWARE 5
+#define SYMNUM 6
 
 &led_strip { chain-length = <27>; };
 
@@ -44,8 +45,8 @@
             bindings = <
 &trans      &kp Q       &lt 1 W         &lt 2 E               &kp R             &kp T      &kp Y        &kp U              &kp I         &kp O            &kp P          &kp TILDE
 &kp LSHIFT  &hm LGUI A  &hm LEFT_ALT S  &hm LCTRL D           &hm LEFT_SHIFT F  &kp G      &kp H        &hm RIGHT_SHIFT J  &hm RCTRL K   &hm RIGHT_ALT L  &hm RGUI SEMI  &kp SQT
-&kp LALT    &kp Z       &kp X           &kp C                 &kp V             &kp B      &kp N        &kp M              &kp COMMA     &kp DOT          &kp FSLH       &kp BACKSLASH
-                                        &mt LC(LSHFT) ESCAPE  &lt 3 SPACE       &kp TAB    &lt 4 ENTER  &kp BSPC           &lt 5 DELETE
+&tog 6      &kp Z       &kp X           &kp C                 &kp V             &kp B      &kp N        &kp M              &kp COMMA     &kp DOT          &kp FSLH       &lt 5 BACKSLASH
+                                        &mt LC(LSHFT) ESCAPE  &lt 3 SPACE       &kp TAB    &lt 6 ENTER  &kp BSPC           &lt 4 DELETE
             >;
         };
 
@@ -103,6 +104,21 @@
 &trans      &trans           &trans           &trans           &trans           &trans             &trans  &trans  &trans  &trans  &trans  &trans
 &kp LSHFT   &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG    &trans  &trans  &trans  &trans  &trans  &trans
                                               &trans           &trans           &trans             &trans  &trans  &trans
+            >;
+        };
+
+        sym_num_layer {
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  7  |  7  |  8  |  9  |  0  | BKSP |
+            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |  4  |  5  |  6  | RGT |     |      |
+            // | SHFT |     |     |     |     |     |   |  1  |  2  |  3  |     |     |      |
+            //                    | GUI |     | SPC |   | ENT |     | ALT |
+
+            bindings = <
+&trans         &kp STAR    &kp N7  &kp N8  &kp N9  &kp MINUS    &kp LESS_THAN     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EXCL      &kp UNDERSCORE  &trans
+&kp BACKSPACE  &kp SLASH   &kp N4  &kp N5  &kp N6  &kp PLUS     &kp GREATER_THAN  &kp LBRC              &kp RBRC               &kp QUESTION  &kp COLON       &kp PIPE
+&trans         &kp DOLLAR  &kp N1  &kp N2  &kp N3  &kp EQUAL    &kp GRAVE         &kp LBKT              &kp RBKT               &kp AMPS      &kp PIPE        &trans
+                                   &kp N0  &trans  &trans       &trans            &trans                &trans
             >;
         };
     };
