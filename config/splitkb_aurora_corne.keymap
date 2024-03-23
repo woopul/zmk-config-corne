@@ -115,9 +115,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans         &kp STAR    &kp N7  &kp N8  &kp N9  &kp MINUS    &kp LESS_THAN     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EXCL      &kp UNDERSCORE  &trans
+&trans         &kp STAR    &kp N7  &kp N8  &kp N9  &kp MINUS    &kp LESS_THAN     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL     &kp UNDERSCORE  &trans
 &kp BACKSPACE  &kp SLASH   &kp N4  &kp N5  &kp N6  &kp PLUS     &kp GREATER_THAN  &kp LBRC              &kp RBRC               &kp QUESTION  &kp COLON       &kp PIPE
-&trans         &kp DOLLAR  &kp N1  &kp N2  &kp N3  &kp EQUAL    &kp GRAVE         &kp LBKT              &kp RBKT               &kp AMPS      &kp PIPE        &trans
+&trans         &kp DOLLAR  &kp N1  &kp N2  &kp N3  &kp PIPE     &kp GRAVE         &kp LBKT              &kp RBKT               &kp EXCL      &kp AMPS        &trans
                                    &kp N0  &trans  &trans       &trans            &trans                &trans
             >;
         };
