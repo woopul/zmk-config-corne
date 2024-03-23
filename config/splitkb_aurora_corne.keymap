@@ -46,7 +46,7 @@
 &trans      &kp Q       &lt 1 W         &lt 2 E               &kp R             &kp T      &kp Y        &kp U              &kp I         &kp O            &kp P          &kp TILDE
 &kp LSHIFT  &hm LGUI A  &hm LEFT_ALT S  &hm LCTRL D           &hm LEFT_SHIFT F  &kp G      &kp H        &hm RIGHT_SHIFT J  &hm RCTRL K   &hm RIGHT_ALT L  &hm RGUI SEMI  &kp SQT
 &tog 6      &kp Z       &kp X           &kp C                 &kp V             &kp B      &kp N        &kp M              &kp COMMA     &kp DOT          &kp FSLH       &lt 5 BACKSLASH
-                                        &mt LC(LSHFT) ESCAPE  &lt 3 SPACE       &kp TAB    &lt 6 ENTER  &kp BSPC           &lt 4 DELETE
+                                        &mt LC(LSHFT) ESCAPE  &lt 3 SPACE       &kp TAB    &lt 4 ENTER  &lt 6 BACKSPACE    &lt 5 DELETE
             >;
         };
 
@@ -115,8 +115,8 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans         &kp STAR    &kp N7  &kp N8  &kp N9  &kp MINUS    &kp LESS_THAN     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL     &kp UNDERSCORE  &trans
-&kp BACKSPACE  &kp SLASH   &kp N4  &kp N5  &kp N6  &kp PLUS     &kp GREATER_THAN  &kp LBRC              &kp RBRC               &kp QUESTION  &kp COLON       &kp PIPE
+&trans         &kp STAR    &kp N7  &kp N8  &kp N9  &kp MINUS    &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL     &kp UNDERSCORE  &trans
+&kp BACKSPACE  &kp SLASH   &kp N4  &kp N5  &kp N6  &kp PLUS     &kp LESS_THAN     &kp LBRC              &kp RBRC               &kp QUESTION  &kp COLON       &kp PIPE
 &trans         &kp DOLLAR  &kp N1  &kp N2  &kp N3  &kp PIPE     &kp GRAVE         &kp LBKT              &kp RBKT               &kp EXCL      &kp AMPS        &trans
                                    &kp N0  &trans  &trans       &trans            &trans                &trans
             >;
