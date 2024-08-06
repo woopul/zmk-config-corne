@@ -32,46 +32,46 @@
 
         default_layer {
             bindings = <
-&trans  &kp Q       &kp W           &kp E                 &kp R             &kp T      &kp Y        &kp U              &kp I         &kp O            &kp P &trans
-&trans  &hm LGUI A  &hm LEFT_ALT S  &hm LCTRL D           &hm LEFT_SHIFT F  &kp G      &kp H        &hm RIGHT_SHIFT J  &hm RCTRL K   &hm RIGHT_ALT L  &hm RGUI SEMI &trans
-&trans  &kp Z       &kp X           &kp C                 &kp V             &kp B      &kp N        &kp M              &kp COMMA     &kp DOT          &kp FSLH &trans
-                              &mt LC(LSHFT) ESCAPE  &lt 1 SPACE       &kp TAB    &lt 2 ENTER  &lt 4 BACKSPACE    &lt 3 DELETE
+&trans  &kp Q       &kp W           &kp E                 &kp R             &kp T      &kp Y        &kp U              &kp I         &kp O            &kp P          &trans
+&trans  &hm LGUI A  &hm LEFT_ALT S  &hm LCTRL D           &hm LEFT_SHIFT F  &kp G      &kp H        &hm RIGHT_SHIFT J  &hm RCTRL K   &hm RIGHT_ALT L  &hm RGUI SEMI  &trans
+&trans  &kp Z       &kp X           &kp C                 &kp V             &kp B      &kp N        &kp M              &kp COMMA     &kp DOT          &kp FSLH       &trans
+                                    &mt LC(LSHFT) ESCAPE  &lt 1 SPACE       &kp TAB    &lt 2 ENTER  &lt 4 BACKSPACE    &lt 3 DELETE
             >;
         };
 
         navigation_layer {
             bindings = <
-&trans  &kp LC(LS(Q))       &kp LC(LS(W))       &kp LC(LS(E))    &kp LC(LS(R))     &kp LG(LS(GRAVE))    &kp C_MUTE  &kp C_VOL_DN   &kp C_VOL_UP  &kp CAPS  &trans &trans
-&trans  &mt LGUI LG(A)      &mt LEFT_ALT LG(S)  &mt LCTRL LG(C)  &mt LSHIFT LG(V)  &kp LG(GRAVE)        &kp LEFT    &kp DOWN       &kp UP        &kp RIGHT &trans &trans
-&trans  &kp LG(LS(LC(N4)))  &kp LG(LS(N4))      &kp LG(X)        &kp LG(Z)         &kp LG(LS(Z))        &kp HOME    &kp PAGE_DOWN  &kp PG_UP     &kp END   &trans &trans
-                                          &trans           &trans            &trans               &trans      &kp BACKSPACE  &trans
+&trans  &kp LC(LS(Q))   &kp LC(LS(W))       &kp LC(LS(E))    &kp LC(LS(R))     &kp LG(LS(GRAVE))           &kp C_MUTE  &kp C_VOL_DN   &kp C_VOL_UP  &kp CAPS   &trans  &trans
+&trans  &mt LGUI LG(A)  &mt LEFT_ALT LG(S)  &mt LCTRL LG(C)  &mt LSHIFT LG(V)  &kp LG(GRAVE)               &kp LEFT    &kp DOWN       &kp UP        &kp RIGHT  &trans  &trans
+&trans  &kp BACKSPACE   &kp LG(LS(N4))      &kp LG(X)        &kp LG(Z)         &kp LS(LG(LC(NUMBER_4)))    &kp HOME    &kp PAGE_DOWN  &kp PG_UP     &kp END    &trans  &trans
+                                            &trans           &trans            &trans                      &trans      &kp BACKSPACE  &trans
             >;
         };
 
         main_symbols_layer {
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N4      &kp N5         &kp N6     &kp N7    &kp N8    &kp N9                &kp N0  &trans
-&trans  &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPS  &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS &trans
-&trans  &trans        &trans        &trans        &trans      &trans         &trans     &trans    &trans    &trans                &trans &trans
-                              &trans        &trans      &trans         &trans     &trans    &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N4      &kp N5         &kp N6     &kp N7    &kp N8    &kp N9                &kp N0                 &trans
+&trans  &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPS  &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &trans        &trans        &trans        &trans      &trans         &trans     &trans    &trans    &trans                &trans                 &trans
+                                    &trans        &trans      &trans         &trans     &trans    &trans
             >;
         };
 
         hardware_layer {
             bindings = <
-  &trans &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4       &trans  &trans  &trans  &trans  &trans &trans
-  &trans &trans           &trans           &trans           &trans           &trans             &trans  &trans  &trans  &trans  &trans &trans
-  &trans &trans   &trans   &trans   &trans   &trans  &trans  &trans  &trans  &trans  &trans &trans
-                                    &trans           &trans           &trans             &trans  &trans  &trans
+&trans  &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans           &trans           &trans           &trans           &trans             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG    &trans  &trans  &trans  &trans  &trans  &trans
+                                          &trans           &trans           &trans             &trans  &trans  &trans
             >;
         };
 
         sym_num_layer {
             bindings = <
- &trans &kp STAR    &kp N7  &kp N8  &kp N9  &kp MINUS    &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL     &kp UNDERSCORE  &trans
- &trans &kp SLASH   &kp N4  &kp N5  &kp N6  &kp PLUS     &kp LESS_THAN     &kp LBRC              &kp RBRC               &kp QUESTION  &kp COLON &trans
- &trans &kp DOLLAR  &kp N1  &kp N2  &kp N3  &kp PIPE     &kp GRAVE         &kp LBKT              &kp RBKT               &kp EXCL      &kp AMPS &trans
-                      &kp N0  &trans  &trans       &trans            &trans                &trans
+&trans  &kp GRAVE      &kp N7  &kp N8  &kp N9          &kp STAR     &kp LESS_THAN     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp TILDE         &trans
+&trans  &kp PIPE       &kp N4  &kp N5  &kp N6          &kp MINUS    &kp GREATER_THAN  &kp LBRC              &kp RBRC               &kp SEMI   &kp SINGLE_QUOTE  &trans
+&trans  &kp AMPERSAND  &kp N1  &kp N2  &kp N3          &kp PLUS     &kp EXCL          &kp LBKT              &kp RBKT               &kp EXCL   &kp DOLLAR        &trans
+                               &kp N0  &kp LEFT_SHIFT  &trans       &trans            &trans                &trans
             >;
         };
     };
