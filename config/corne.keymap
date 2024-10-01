@@ -69,8 +69,8 @@
         sym_num_layer {
             bindings = <
 &trans  &kp GRAVE      &kp N7  &kp N8  &kp N9          &kp STAR     &kp LESS_THAN     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp TILDE         &trans
-&trans  &kp PIPE       &kp N4  &kp N5  &kp N6          &kp MINUS    &kp GREATER_THAN  &kp LBRC              &kp RBRC               &kp SEMI   &kp SINGLE_QUOTE  &trans
-&trans  &kp AMPERSAND  &kp N1  &kp N2  &kp N3          &kp PLUS     &kp EXCL          &kp LBKT              &kp RBKT               &kp EXCL   &kp DOLLAR        &trans
+&trans  &kp AMPS       &kp N4  &kp N5  &kp N6          &kp MINUS    &kp GREATER_THAN  &kp LBRC              &kp RBRC               &kp SEMI   &kp SINGLE_QUOTE  &trans
+&trans  &kp BACKSLASH  &kp N1  &kp N2  &kp N3          &kp PLUS     &kp EXCL          &kp LBKT              &kp RBKT               &kp EXCL   &kp DOLLAR        &trans
                                &kp N0  &kp LEFT_SHIFT  &trans       &trans            &trans                &trans
             >;
         };
